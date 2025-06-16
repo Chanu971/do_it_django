@@ -1,4 +1,8 @@
+{% load static %}
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="https://www.kopo.ac.kr/robot/index.do" style="width:8%;">
+        <img src="{% static 'blog/image/robot_campus.png' %}" style="width:100%;">
+    </a>
     <div class="container">
         <a class="navbar-brand" href="/">Do It Django</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -15,7 +19,10 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/about_me/">About Me</a>
                 </li>
-                <li class="nav-item dropdown">
+                <li>
+                    <a class="nav-link" href="/modbus/">Modbus Client</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Dropdown link
                     </a>
@@ -24,7 +31,7 @@
                         <a class="dropdown-item" href="#">Another action</a>
                         <a class="dropdown-item" href="#">Something else here</a>
                     </div>
-                </li>
+                </li> -->
             </ul>
             <ul class="navbar-nav">
                 <li class="nav-item">
